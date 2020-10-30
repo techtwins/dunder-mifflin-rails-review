@@ -1,32 +1,31 @@
-<h1>Update Employee(s)</h1>
+<h1>Employee Form</h1>
 
-<% form_for @employee do |f| %>
-    <div>
+<%= form_for @employee do |f| %>
+    <p>
         <%= f.label :first_name %>
         <%= f.text_field :first_name %>
-    </div>
+    </p>
 
-     <div>
+     <p>
         <%= f.label :last_name %>
         <%= f.text_field :last_name %>
-    </div>
+    </p>
 
-    <div>
+    <p>
         <%= f.label :title %>
         <%= f.text_field :title %>
-    </div>
+    </p>
 
-    <div>
+    <p>
         <%= f.label :alias %>
         <%= f.text_field :alias %>
-    </div>
+    </p>
 
-    <div>
+    <p>
         <%= f.label :office %>
         <%= f.text_field :office %>
-    </div>
-
-    <div>
+    </p>
+    <p>
         <%= f.submit %>
-    </div>
+    </p>
 <% end %>
